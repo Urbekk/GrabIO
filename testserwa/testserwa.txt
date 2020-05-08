@@ -1,0 +1,110 @@
+Configuration	testserwa
+STM32CubeMX 	5.6.0
+Date	05/07/2020
+MCU	STM32F411VETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0 - OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1 - OSC_OUT
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	PWM Generation CH2	TIM1_CH2	PE11
+TIM1	PWM Generation CH4	TIM1_CH4	PE14
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM3	PWM Generation CH2	TIM3_CH2	PA7
+TIM4	PWM Generation CH1	TIM4_CH1	PD12
+TIM4	PWM Generation CH2	TIM4_CH2	PD13
+TIM4	PWM Generation CH3	TIM4_CH3	PD14
+TIM4	PWM Generation CH4	TIM4_CH4	PD15
+TIM5	Encoder Mode	TIM5_CH1	PA0-WKUP
+TIM5	Encoder Mode	TIM5_CH2	PA1
+TIM9	Internal Clock	TIM9_VS_ClockSourceINT	VP_TIM9_VS_ClockSourceINT
+USART6	Asynchronous	USART6_RX	PC7
+USART6	Asynchronous	USART6_TX	PC6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+12	PH0 - OSC_IN	RCC_OSC_IN	
+13	PH1 - OSC_OUT	RCC_OSC_OUT	
+23	PA0-WKUP	TIM5_CH1	enkoder1
+24	PA1	TIM5_CH2	enkoder2
+32	PA7	TIM3_CH2	chwytak
+33	PC4	GPIO_Output	kierunkiP1
+34	PC5	GPIO_Output	kierunkiP2
+42	PE11	TIM1_CH2	silnikPrawy
+45	PE14	TIM1_CH4	silnikLewy
+46	PE15	GPIO_Output	kierunkiL1
+47	PB10	GPIO_Output	kierunkiL2
+59	PD12	TIM4_CH1	przegub2
+60	PD13	TIM4_CH2	przegub1
+61	PD14	TIM4_CH3	podstawa2
+62	PD15	TIM4_CH4	podstawa1
+63	PC6	USART6_TX	
+64	PC7	USART6_RX	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0 - OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1 - OSC_OUT
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	PWM Generation CH2	TIM1_CH2	PE11
+TIM1	PWM Generation CH4	TIM1_CH4	PE14
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM3	PWM Generation CH2	TIM3_CH2	PA7
+TIM4	PWM Generation CH1	TIM4_CH1	PD12
+TIM4	PWM Generation CH2	TIM4_CH2	PD13
+TIM4	PWM Generation CH3	TIM4_CH3	PD14
+TIM4	PWM Generation CH4	TIM4_CH4	PD15
+TIM5	Encoder Mode	TIM5_CH1	PA0-WKUP
+TIM5	Encoder Mode	TIM5_CH2	PA1
+TIM9	Internal Clock	TIM9_VS_ClockSourceINT	VP_TIM9_VS_ClockSourceINT
+USART6	Asynchronous	USART6_RX	PC7
+USART6	Asynchronous	USART6_TX	PC6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+12	PH0 - OSC_IN	RCC_OSC_IN	
+13	PH1 - OSC_OUT	RCC_OSC_OUT	
+23	PA0-WKUP	TIM5_CH1	enkoder1
+24	PA1	TIM5_CH2	enkoder2
+32	PA7	TIM3_CH2	chwytak
+33	PC4	GPIO_Output	kierunkiP1
+34	PC5	GPIO_Output	kierunkiP2
+42	PE11	TIM1_CH2	silnikPrawy
+45	PE14	TIM1_CH4	silnikLewy
+46	PE15	GPIO_Output	kierunkiL1
+47	PB10	GPIO_Output	kierunkiL2
+59	PD12	TIM4_CH1	przegub2
+60	PD13	TIM4_CH2	przegub1
+61	PD14	TIM4_CH3	podstawa2
+62	PD15	TIM4_CH4	podstawa1
+63	PC6	USART6_TX	
+64	PC7	USART6_RX	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : testserwa
+Project Folder : F:\STM\workspace_1.3.0\testserwa
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_F4 V1.25.0
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
