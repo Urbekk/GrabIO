@@ -482,11 +482,11 @@ void fabrik(struct point pStart, struct point pMiddle, struct point pEnd,
 			diffrence = distanceBetween(target, pEnd);
 		}
 		alfa = atanf(pEnd.y / pEnd.x) * 180 / M_PI;
-		beta = acosf(pMiddle.x / (cosf(alfa * M_PI / 180.0) * L1)) * 180 / M_PI;
+		beta = acosf(pMiddle.x / (cosf(alfa * M_PI / 180.0) * L1)) * 180 / M_PI;//1
 		alfa = (int)alfa;
 		beta = (int)beta;
 		pEnd.x = (int)pEnd.x;
-		gamma = asinf((pEnd.x / cosf(alfa * M_PI / 180.0)- cosf(beta * M_PI / 180.0) * L1) / L2) * 180 / M_PI- beta + 90.0;
+		gamma = asinf((pEnd.x / cosf(alfa * M_PI / 180.0)- cosf(beta * M_PI / 180.0) * L1) / L2) * 180 / M_PI- beta + 90.0;//1
 		if(isnanf(gamma)){
 			return;
 		}
@@ -514,7 +514,12 @@ void fabrik(struct point pStart, struct point pMiddle, struct point pEnd,
 		else
 			flagaF2 = -1;
 
-		positions = ((180-alfa) * 32) + 1405;
+		if(pEnd.x>0)
+			positions = ((180-alfa) * 32) + 1405;
+		if(pEnd.x<=0 && pEnd.y>=0)
+			positions = ((360-alfa) * 32) + 1405;
+		if(pEnd.x<0 && pEnd.y<0)
+			positions = ((0+alfa) * 32) + 1405;
 		if (positions < TIM5->CNT) {
 			kierunek(0, 1, 1, 0); //obrot w prawo
 			obrot = 2;
